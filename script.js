@@ -1,18 +1,22 @@
-const firstGif = document.querySelector('.first-gif');
-const   firstScene = firstGif.querySelector('video');
+
+const firstVideo = document.querySelector('.first-video');
+const firstScene = firstVideo.querySelector('video');
+
+// const intro = document.querySelector('.first-video');
+// const IntroText = intro.querySelector('intro-text');
 //end section
 //const section = document.querySelector('section');
 //const end = section.querySelector('.second-gif')
 
 const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.Scene({
+let scene = new ScrollMagic.Scene({
     duration: 11000,
-    triggerElement: firstGif,
+    triggerElement: firstVideo,
     triggerHook: 0
 })
 .addIndicators()
-.setPin(firstGif)
+.setPin(firstVideo)
 .addTo(controller)
 
 //video animation 

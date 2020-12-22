@@ -7,11 +7,62 @@ body{
     font-family: sans-serif;
     background-color: rgb(66, 18, 58);
 }
-.first-gif{
+nav{
+    background-color: rgb(16, 31, 49);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    
+}
+.nav-links{
+    color: rgb(23, 173, 173);
+    float: right;
+    margin: 10px;
+    right: 25px;
+    position: relative;
+    text-decoration: none; 
+}
+.intro {
+    width: 100%;
     height: 100vh;
 }
-.first-gif video{
+h1:before{
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+    content: 'こんにちは';
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    font-size: 400%;
+    animation-name: intro;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes intro {
+    0% {font-size:400%; opacity:1;}
+    25% {font-size:350%; opacity:0;}
+    50% {font-size:400%; opacity:1; }
+    75% {font-size:350%; opacity:0; content: "Hello"}
+    87.5% {font-size:350%; opacity:0; content: "こんにちは"}
+    100% {font-size:400%; opacity:1;}
+}
+
+.first-video{
+    height: 100vh;
+}
+.first-video video{
     height: 100%;
     width: 100%;
     object-fit: fill;
+}
+.end-section{
+    width: 100%;
+    height: 100vh;
 }
