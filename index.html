@@ -8,22 +8,29 @@
 </head>
 <body>
     <nav>
-        <a href="#" class = "nav-links">Bottom</a>
-        <a href="#" class = "nav-links">Top</a>
+        <a href="#end-section" class = "nav-links">Bottom</a>
+        <a href="#intro" class = "nav-links" onclick="gotoAnchor1()">Top</a>
     </nav>
-    <div class = "intro">
+    <div class = "intro" id="intro">
         <h1 class="intro-text"></h1>
+        <div class="intro-description">
+            <p class="description">Gifs and CSS animations are cool...</p>
+            <p class="description">But you can animate content on scroll!</p>
+            <p class="description">Keep scrolling to see the magic!</p>
+        </div>
+        <img class = "vertical-image" src="vertical-gif.gif" alt="vertical image">
     </div>
     <div class = "first-video">
         <video src="city-scene-edit.mp4"></video>
     </div>
     <section class="second">
-        <div class="end-section">
+        <div class = "end-section" id="end-section">
             <p>test</p>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>

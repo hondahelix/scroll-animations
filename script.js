@@ -11,6 +11,7 @@ const firstScene = firstVideo.querySelector('video');
 const controller = new ScrollMagic.Controller();
 
 let scene = new ScrollMagic.Scene({
+    offset: 1,
     duration: 11000,
     triggerElement: firstVideo,
     triggerHook: 0
@@ -40,3 +41,10 @@ setInterval(()=>{
     firstScene.currentTime = delay;
 },interval);
 
+
+// var anchor1 = document.getElementById("end-section");
+// var posTop = anchor1.offsetTop;
+// function  gotoAnchor1()
+// {
+//  TweenLite.to(window, 2, {scrollTo:posTop});
+// }

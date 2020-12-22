@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: sans-serif;
     background-color: rgb(66, 18, 58);
@@ -28,16 +31,28 @@ nav{
     width: 100%;
     height: 100vh;
 }
-h1:before{
-    /* margin: 0;
+.vertical-image{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); */
-    content: 'こんにちは';
+    height: 100vh;
+    width: 60vh;
+    right: 1%;
+    top: 0%;
+}
+h1{
+    top: 15%;
+    left: 5%;
+    position: relative;
     writing-mode: tb-rl;
+    border-radius: 20%;
+    z-index: 10;
+
+}
+h1:before{
+    content: 'こんにちは';
     transform: rotate(-180deg);
+    border-radius: 20%;
+    background-color: rgb(151, 39, 82);
+    text-shadow: 2px 2px 5px rgb(71, 209, 214);
     font-size: 400%;
     animation-name: intro;
     animation-duration: 5s;
@@ -49,9 +64,22 @@ h1:before{
     0% {font-size:400%; opacity:1;}
     25% {font-size:350%; opacity:0;}
     50% {font-size:400%; opacity:1; }
-    75% {font-size:350%; opacity:0; content: "Hello"}
+    75% {font-size:350%; opacity:0; content: "Hello"; transform: rotate(180deg)}
     87.5% {font-size:350%; opacity:0; content: "こんにちは"}
     100% {font-size:400%; opacity:1;}
+}
+
+.intro-description{
+    position: absolute;
+    font-size: 200%;
+    color: rgb(81, 192, 196);
+    margin: 10px;
+    left: 36%;
+    top: 50%;
+    z-index: 10;
+}
+.description{
+    margin: 10px;
 }
 
 .first-video{
