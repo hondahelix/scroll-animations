@@ -34,5 +34,3 @@ setInterval(()=>{
     delay += (scrollpos - delay) * accelamount;
     firstScene.currentTime = delay;
 },interval);
-
-
