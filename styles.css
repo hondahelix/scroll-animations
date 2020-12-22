@@ -9,7 +9,8 @@ html {
 body{
     font-family: sans-serif;
     background-color: rgb(66, 18, 58);
-    background-image: linear-gradient(rgb(66, 18, 58), rgb(21, 4, 22));
+    /* background-image: linear-gradient(rgb(66, 18, 58), rgb(21, 4, 22)); */
+    background-image: url(assets/generic_city.jpeg);
 }
 nav{
     background-color: rgb(16, 31, 49);

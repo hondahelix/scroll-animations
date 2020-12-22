@@ -10,9 +10,9 @@ let scene = new ScrollMagic.Scene({
     triggerElement: firstVideo,
     triggerHook: 0
 })
-.addIndicators()
 .setPin(firstVideo)
 .addTo(controller)
+//.addIndicators()
 
 //video animation 
 let accelamount = 0.1;
