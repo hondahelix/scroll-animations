@@ -2,12 +2,6 @@
 const firstVideo = document.querySelector('.first-video');
 const firstScene = firstVideo.querySelector('video');
 
-// const intro = document.querySelector('.first-video');
-// const IntroText = intro.querySelector('intro-text');
-//end section
-//const section = document.querySelector('section');
-//const end = section.querySelector('.second-gif')
-
 const controller = new ScrollMagic.Controller();
 
 let scene = new ScrollMagic.Scene({
@@ -25,13 +19,13 @@ let accelamount = 0.1;
 let scrollpos =0;
 let delay = 0;
 let interval = 100;
-// let buttonPress = true;
 
 scene.on('update', e =>{
     scrollpos = e.scrollPos/1000;
-    console.log(scrollpos);
+    //console.log(scrollpos);
 });
-//becasue other gif was 50fps it changes interval from 100 to 50 when it gets to it
+//first part of the video is 10 fps so 1000/10 and then other portion is 20 fps so 1000/20 
+//helps the delay run more smooth
 if(delay >9.25){
     interval = 50;
 }
@@ -42,9 +36,3 @@ setInterval(()=>{
 },interval);
 
 
-// var anchor1 = document.getElementById("end-section");
-// var posTop = anchor1.offsetTop;
-// function  gotoAnchor1()
-// {
-//  TweenLite.to(window, 2, {scrollTo:posTop});
-// }
