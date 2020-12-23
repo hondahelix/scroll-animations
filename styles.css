@@ -59,7 +59,7 @@ h1:before{
     text-shadow: 2px 2px 5px rgb(71, 209, 214);
     font-size: 400%;
     animation-name: intro;
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
 
 }
@@ -78,7 +78,7 @@ h1:before{
     font-size: 200%;
     color: rgb(81, 192, 196);
     margin: 10px;
-    left: 36%;
+    left: 35%;
     top: 50%;
     z-index: 10;
 }
