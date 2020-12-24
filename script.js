@@ -25,7 +25,7 @@ scene.on('update', e =>{
     //console.log(scrollpos);
 });
 //first part of the video is 10 fps so 1000/10 and then other portion is 20 fps so 1000/20 
-//helps the delay run more smooth
+//helps the delay run more smoothly
 if(delay >9.25){
     interval = 50;
 }
